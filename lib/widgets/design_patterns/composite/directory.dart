@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../constants/constants.dart';
 import '../../../design_patterns/composite/composite.dart';
-import '../../../helpers/file_size_converter.dart';
+import '../../../utils/file_size_converter.dart';
 
 class Directory extends StatelessWidget implements IFile {
   final String title;
@@ -34,7 +34,7 @@ class Directory extends StatelessWidget implements IFile {
         accentColor: Colors.black,
       ),
       child: Padding(
-        padding: const EdgeInsets.only(left: LayoutConstants.paddingS),
+        padding: const EdgeInsets.only(left: Dimens.paddingS),
         child: ExpansionTile(
           leading: const Icon(Icons.folder),
           title: Text('$title (${FileSizeConverter.bytesToString(getSize())})'),

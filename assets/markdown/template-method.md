@@ -269,7 +269,7 @@ class TemplateMethodExample extends StatelessWidget {
     return ScrollConfiguration(
       behavior: ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -277,12 +277,12 @@ class TemplateMethodExample extends StatelessWidget {
               bmiCalculator: StudentsXmlBmiCalculator(),
               headerText: 'Students from XML data source:',
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             StudentsSection(
               bmiCalculator: StudentsJsonBmiCalculator(),
               headerText: 'Students from JSON data source:',
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             StudentsSection(
               bmiCalculator: TeenageStudentsJsonBmiCalculator(),
               headerText: 'Students from JSON data source (teenagers only):',

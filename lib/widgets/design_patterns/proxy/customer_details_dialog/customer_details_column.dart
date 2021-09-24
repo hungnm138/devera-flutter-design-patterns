@@ -21,12 +21,12 @@ class CustomerDetailsColumn extends StatelessWidget {
           label: 'E-mail',
           text: customerDetails.email,
         ),
-        const SizedBox(height: LayoutConstants.spaceL),
+        const SizedBox(height: Dimens.spaceL),
         CustomerInfoGroup(
           label: 'Position',
           text: customerDetails.position,
         ),
-        const SizedBox(height: LayoutConstants.spaceL),
+        const SizedBox(height: Dimens.spaceL),
         CustomerInfoGroup(
           label: 'Hobby',
           text: customerDetails.hobby,

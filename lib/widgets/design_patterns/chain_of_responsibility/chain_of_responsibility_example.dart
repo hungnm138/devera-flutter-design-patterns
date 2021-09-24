@@ -49,7 +49,7 @@ class _ChainOfResponsibilityExampleState
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[

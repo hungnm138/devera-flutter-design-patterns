@@ -66,7 +66,7 @@ class _FacadeExampleState extends State<FacadeExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
@@ -90,7 +90,7 @@ class _FacadeExampleState extends State<FacadeExample> {
                   ? _changeStreamingMode
                   : null,
             ),
-            const SizedBox(height: LayoutConstants.spaceXL * 2),
+            const SizedBox(height: Dimens.spaceXL * 2),
             Column(
               children: <Widget>[
                 Row(
@@ -110,7 +110,7 @@ class _FacadeExampleState extends State<FacadeExample> {
                     ),
                   ],
                 ),
-                const SizedBox(height: LayoutConstants.spaceXL),
+                const SizedBox(height: Dimens.spaceXL),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[

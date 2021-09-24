@@ -18,13 +18,13 @@ class BurgerInformationColumn extends StatelessWidget {
       children: <Widget>[
         const BurgerInformationLabel('Price'),
         Text(burger.getFormattedPrice()),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         const BurgerInformationLabel('Ingredients'),
         Text(
           burger.getFormattedIngredients(),
           textAlign: TextAlign.justify,
         ),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         const BurgerInformationLabel('Allergens'),
         Text(
           burger.getFormattedAllergens(),

@@ -48,7 +48,7 @@ class _PrototypeExampleState extends State<PrototypeExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[

@@ -76,7 +76,7 @@ class _BridgeExampleState extends State<BridgeExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

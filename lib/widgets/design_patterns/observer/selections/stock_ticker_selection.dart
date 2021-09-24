@@ -47,7 +47,7 @@ class _TickerTile extends StatelessWidget {
       child: InkWell(
         onTap: () => onChanged(index),
         child: Padding(
-          padding: const EdgeInsets.all(LayoutConstants.paddingM),
+          padding: const EdgeInsets.all(Dimens.paddingM),
           child: Text(
             stockTickerModel.stockTicker.title,
             textAlign: TextAlign.center,

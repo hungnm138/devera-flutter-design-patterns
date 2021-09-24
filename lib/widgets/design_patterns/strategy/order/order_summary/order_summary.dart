@@ -20,7 +20,7 @@ class OrderSummary extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(LayoutConstants.paddingM),
+        padding: const EdgeInsets.all(Dimens.paddingM),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -34,7 +34,7 @@ class OrderSummary extends StatelessWidget {
               label: 'Subtotal',
               value: order.price,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             OrderSummaryRow(
               fontFamily: 'Roboto',
               label: 'Shipping',

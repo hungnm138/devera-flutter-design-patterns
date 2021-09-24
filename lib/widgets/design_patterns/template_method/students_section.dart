@@ -33,7 +33,7 @@ class _StudentsSectionState extends State<StudentsSection> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         Text(widget.headerText),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         AnimatedSwitcher(
           duration: const Duration(milliseconds: 500),
           child: _StudentsSectionContent(

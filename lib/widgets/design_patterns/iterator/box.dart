@@ -19,14 +19,14 @@ class Box extends StatelessWidget {
       elevation: 4.0,
       color: color,
       child: Padding(
-        padding: const EdgeInsets.all(LayoutConstants.paddingM),
+        padding: const EdgeInsets.all(Dimens.paddingM),
         child: Column(
           children: <Widget>[
             Text(
               nodeId.toString(),
               style: Theme.of(context).textTheme.headline6,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             if (child != null) child!,
           ],
         ),

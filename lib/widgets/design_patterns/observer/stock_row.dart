@@ -19,15 +19,15 @@ class StockRow extends StatelessWidget {
     return Row(
       children: [
         SizedBox(
-          width: LayoutConstants.spaceXL * 2,
+          width: Dimens.spaceXL * 2,
           child: Text(
             stock.symbol.toShortString(),
             style: TextStyle(color: color),
           ),
         ),
-        const SizedBox(width: LayoutConstants.spaceM),
+        const SizedBox(width: Dimens.spaceM),
         SizedBox(
-          width: LayoutConstants.spaceXL * 2,
+          width: Dimens.spaceXL * 2,
           child: Text(
             stock.price.toString(),
             style: TextStyle(color: color),
@@ -36,7 +36,7 @@ class StockRow extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(
-            horizontal: LayoutConstants.paddingM,
+            horizontal: Dimens.paddingM,
           ),
           child: Icon(
             stock.changeDirection == StockChangeDirection.growing

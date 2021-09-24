@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../constants/constants.dart';
 import '../../../../design_patterns/composite/composite.dart';
-import '../../../../helpers/file_size_converter.dart';
+import '../../../../utils/file_size_converter.dart';
 
 class File extends StatelessWidget implements IFile {
   final String title;
@@ -19,7 +19,7 @@ class File extends StatelessWidget implements IFile {
   @override
   Widget render(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: LayoutConstants.paddingS),
+      padding: const EdgeInsets.only(left: Dimens.paddingS),
       child: ListTile(
         title: Text(
           title,

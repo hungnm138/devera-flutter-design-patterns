@@ -15,10 +15,10 @@ class CustomersDatatable extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: DataTable(
-        columnSpacing: LayoutConstants.spaceM,
-        horizontalMargin: LayoutConstants.marginM,
-        headingRowHeight: LayoutConstants.spaceXL,
-        dataRowHeight: LayoutConstants.spaceXL,
+        columnSpacing: Dimens.spaceM,
+        horizontalMargin: Dimens.marginM,
+        headingRowHeight: Dimens.spaceXL,
+        dataRowHeight: Dimens.spaceXL,
         columns: const <DataColumn>[
           DataColumn(
             label: Text(

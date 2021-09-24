@@ -30,7 +30,7 @@ class _StateExampleState extends State<StateExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
@@ -40,7 +40,7 @@ class _StateExampleState extends State<StateExample> {
               onPressed: _changeState,
               text: 'Load names',
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             StreamBuilder<IState>(
               initialData: NoResultsState(),
               stream: _stateContext.outState,

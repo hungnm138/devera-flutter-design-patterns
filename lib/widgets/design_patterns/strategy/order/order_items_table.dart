@@ -13,10 +13,10 @@ class OrderItemsTable extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DataTable(
-      columnSpacing: LayoutConstants.spaceL,
-      horizontalMargin: LayoutConstants.marginM,
-      headingRowHeight: LayoutConstants.spaceXL,
-      dataRowHeight: LayoutConstants.spaceXL,
+      columnSpacing: Dimens.spaceL,
+      horizontalMargin: Dimens.marginM,
+      headingRowHeight: Dimens.spaceXL,
+      dataRowHeight: Dimens.spaceXL,
       columns: const <DataColumn>[
         DataColumn(
           label: Text(

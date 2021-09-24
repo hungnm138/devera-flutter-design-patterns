@@ -35,7 +35,7 @@ class _ProxyExampleState extends State<ProxyExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
@@ -44,7 +44,7 @@ class _ProxyExampleState extends State<ProxyExample> {
               style: Theme.of(context).textTheme.subtitle1,
               textAlign: TextAlign.center,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             for (var customer in _customerList)
               Card(
                 child: ListTile(

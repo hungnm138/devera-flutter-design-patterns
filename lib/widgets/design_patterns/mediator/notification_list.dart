@@ -20,23 +20,23 @@ class NotificationList extends StatelessWidget {
           'Last notifications',
           style: Theme.of(context).textTheme.headline6,
         ),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         Text(
           'Note: click on the card to send a notification from the team member.',
           style: Theme.of(context).textTheme.caption,
         ),
-        const SizedBox(height: LayoutConstants.spaceS),
+        const SizedBox(height: Dimens.spaceS),
         for (final member in members)
           Card(
             margin: const EdgeInsets.symmetric(
-              vertical: LayoutConstants.marginS,
+              vertical: Dimens.marginS,
             ),
             child: InkWell(
               onTap: () => onTap(member),
               child: Container(
                 padding: const EdgeInsets.symmetric(
-                  vertical: LayoutConstants.paddingM,
-                  horizontal: LayoutConstants.paddingL,
+                  vertical: Dimens.paddingM,
+                  horizontal: Dimens.paddingL,
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -49,13 +49,13 @@ class NotificationList extends StatelessWidget {
                             member.toString(),
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
-                          const SizedBox(height: LayoutConstants.spaceS),
+                          const SizedBox(height: Dimens.spaceS),
                           Text(member.lastNotification ?? '-'),
                         ],
                       ),
                     ),
                     const Padding(
-                      padding: EdgeInsets.only(left: LayoutConstants.paddingL),
+                      padding: EdgeInsets.only(left: Dimens.paddingL),
                       child: Icon(Icons.message),
                     ),
                   ],

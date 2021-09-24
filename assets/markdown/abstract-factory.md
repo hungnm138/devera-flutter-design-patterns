@@ -287,7 +287,7 @@ class _AbstractFactoryExampleState extends State<AbstractFactoryExample> {
     return ScrollConfiguration(
       behavior: ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           children: <Widget>[
             FactorySelection(
@@ -295,31 +295,31 @@ class _AbstractFactoryExampleState extends State<AbstractFactoryExample> {
               selectedIndex: _selectedFactoryIndex,
               onChanged: _setSelectedFactoryIndex,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             Text(
               'Widgets showcase',
               style: Theme.of(context).textTheme.headline6,
             ),
-            const SizedBox(height: LayoutConstants.spaceXL),
+            const SizedBox(height: Dimens.spaceXL),
             Text(
               'Process indicator',
               style: Theme.of(context).textTheme.subtitle1,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             _activityIndicator.render(),
-            const SizedBox(height: LayoutConstants.spaceXL),
+            const SizedBox(height: Dimens.spaceXL),
             Text(
               'Slider ($_sliderValueString%)',
               style: Theme.of(context).textTheme.subtitle1,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             _slider.render(_sliderValue, _setSliderValue),
-            const SizedBox(height: LayoutConstants.spaceXL),
+            const SizedBox(height: Dimens.spaceXL),
             Text(
               'Switch ($_switchValueString)',
               style: Theme.of(context).textTheme.subtitle1,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             _switch.render(_switchValue, _setSwitchValue),
           ],
         ),

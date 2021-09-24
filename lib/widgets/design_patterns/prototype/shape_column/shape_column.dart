@@ -75,7 +75,7 @@ class _ShapeWithLabel extends StatelessWidget {
     return Column(
       children: <Widget>[
         Text(label),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         child,
       ],
     );

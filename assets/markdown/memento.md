@@ -213,13 +213,13 @@ class _MementoExampleState extends State<MementoExample> {
     return ScrollConfiguration(
       behavior: ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           children: <Widget>[
             ShapeContainer(
               shape: _originator.state,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             PlatformButton(
               child: Text('Randomise properties'),
               materialColor: Colors.black,
@@ -233,7 +233,7 @@ class _MementoExampleState extends State<MementoExample> {
               materialTextColor: Colors.white,
               onPressed: _commandHistory.isEmpty ? null : _undo,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
           ],
         ),
       ),

@@ -66,7 +66,7 @@ class _BuilderExampleState extends State<BuilderExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,7 +91,7 @@ class _BuilderExampleState extends State<BuilderExample> {
                   .toList(),
               onChanged: _onBurgerMenuItemChanged,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             Row(
               children: <Widget>[
                 Text(
@@ -100,7 +100,7 @@ class _BuilderExampleState extends State<BuilderExample> {
                 ),
               ],
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             BurgerInformationColumn(burger: _selectedBurger),
           ],
         ),

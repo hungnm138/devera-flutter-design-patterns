@@ -14,7 +14,7 @@ class SingletonExampleCard extends StatelessWidget {
     return Card(
       child: Container(
         height: 64.0,
-        padding: const EdgeInsets.all(LayoutConstants.paddingL),
+        padding: const EdgeInsets.all(Dimens.paddingL),
         child: Center(
           child: Text(
             text,

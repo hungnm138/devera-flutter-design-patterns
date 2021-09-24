@@ -38,7 +38,7 @@ class _FactoryMethodExampleState extends State<FactoryMethodExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
@@ -47,7 +47,7 @@ class _FactoryMethodExampleState extends State<FactoryMethodExample> {
               selectedIndex: _selectedDialogIndex,
               onChanged: _setSelectedDialogIndex,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             PlatformButton(
               materialColor: Colors.black,
               materialTextColor: Colors.white,

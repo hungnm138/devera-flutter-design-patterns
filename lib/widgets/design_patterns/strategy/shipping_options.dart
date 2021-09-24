@@ -18,7 +18,7 @@ class ShippingOptions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(LayoutConstants.paddingM),
+        padding: const EdgeInsets.all(Dimens.paddingM),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[

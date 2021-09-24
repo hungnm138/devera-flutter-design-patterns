@@ -24,7 +24,7 @@ class _InterpreterExampleState extends State<InterpreterExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

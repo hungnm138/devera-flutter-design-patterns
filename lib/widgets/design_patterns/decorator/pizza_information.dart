@@ -19,12 +19,12 @@ class PizzaInformation extends StatelessWidget {
           'Pizza details:',
           style: Theme.of(context).textTheme.headline6,
         ),
-        const SizedBox(height: LayoutConstants.spaceL),
+        const SizedBox(height: Dimens.spaceL),
         Text(
           pizza.getDescription(),
           textAlign: TextAlign.justify,
         ),
-        const SizedBox(height: LayoutConstants.spaceM),
+        const SizedBox(height: Dimens.spaceM),
         Text('Price: \$${pizza.getPrice().toStringAsFixed(2)}'),
       ],
     );

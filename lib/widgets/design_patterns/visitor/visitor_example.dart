@@ -138,7 +138,7 @@ class _VisitorExampleState extends State<VisitorExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: [
@@ -153,7 +153,7 @@ class _VisitorExampleState extends State<VisitorExample> {
               onPressed: _showFilesDialog,
               text: 'Export files',
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             _rootDirectory.render(context),
           ],
         ),

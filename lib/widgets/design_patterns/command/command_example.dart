@@ -51,14 +51,14 @@ class _CommandExampleState extends State<CommandExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
             ShapeContainer(
               shape: _shape,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             PlatformButton(
               materialColor: Colors.black,
               materialTextColor: Colors.white,
@@ -84,7 +84,7 @@ class _CommandExampleState extends State<CommandExample> {
               onPressed: _commandHistory.isEmpty ? null : _undo,
               text: 'Undo',
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             Row(
               children: <Widget>[
                 CommandHistoryColumn(

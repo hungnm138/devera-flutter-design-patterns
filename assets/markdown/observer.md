@@ -322,7 +322,7 @@ class _ObserverExampleState extends State<ObserverExample> {
     return ScrollConfiguration(
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           children: <Widget>[
             StockSubscriberSelection(

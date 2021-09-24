@@ -39,20 +39,20 @@ class _SingletonExampleState extends State<SingletonExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
             for (var state in stateList)
               Padding(
                 padding: const EdgeInsets.only(
-                  bottom: LayoutConstants.paddingL,
+                  bottom: Dimens.paddingL,
                 ),
                 child: SingletonExampleCard(
                   text: state.currentText,
                 ),
               ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             PlatformButton(
               materialColor: Colors.black,
               materialTextColor: Colors.white,
@@ -65,7 +65,7 @@ class _SingletonExampleState extends State<SingletonExample> {
               onPressed: _reset,
               text: 'Reset',
             ),
-            const SizedBox(height: LayoutConstants.spaceXL),
+            const SizedBox(height: Dimens.spaceXL),
             const Text(
               'Note: change states\' text and navigate the application (e.g. go to the tab "description" or main menu, then go back to this example) to see how the Singleton state behaves!',
               textAlign: TextAlign.justify,

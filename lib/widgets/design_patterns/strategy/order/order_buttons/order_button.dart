@@ -26,7 +26,7 @@ class OrderButton extends StatelessWidget {
           iconData,
           color: Colors.white,
         ),
-        const SizedBox(width: LayoutConstants.spaceXS),
+        const SizedBox(width: Dimens.spaceXS),
         Text(title),
       ],
     );

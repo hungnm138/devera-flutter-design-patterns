@@ -47,7 +47,7 @@ class _StrategyExampleState extends State<StrategyExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -56,7 +56,7 @@ class _StrategyExampleState extends State<StrategyExample> {
               onAdd: _addToOrder,
               onClear: _clearOrder,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             Stack(
               children: <Widget>[
                 AnimatedOpacity(
@@ -80,7 +80,7 @@ class _StrategyExampleState extends State<StrategyExample> {
                       OrderItemsTable(
                         orderItems: _order.items,
                       ),
-                      const SizedBox(height: LayoutConstants.spaceM),
+                      const SizedBox(height: Dimens.spaceM),
                       ShippingOptions(
                         selectedIndex: _selectedStrategyIndex,
                         shippingOptions: _shippingCostsStrategyList,

@@ -252,7 +252,7 @@ class _StateExampleState extends State<StateExample> {
     return ScrollConfiguration(
       behavior: ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           children: <Widget>[
             PlatformButton(
@@ -261,7 +261,7 @@ class _StateExampleState extends State<StateExample> {
               materialTextColor: Colors.white,
               onPressed: _changeState,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             StreamBuilder(
               initialData: NoResultsState(),
               stream: _stateContext.outState,

@@ -87,7 +87,7 @@ class _IteratorExampleState extends State<IteratorExample> {
       behavior: const ScrollBehavior(),
       child: SingleChildScrollView(
         padding: const EdgeInsets.symmetric(
-          horizontal: LayoutConstants.paddingL,
+          horizontal: Dimens.paddingL,
         ),
         child: Column(
           children: <Widget>[
@@ -97,7 +97,7 @@ class _IteratorExampleState extends State<IteratorExample> {
               onChanged:
                   !_isTraversing ? _setSelectedTreeCollectionIndex : null,
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             Wrap(
               alignment: WrapAlignment.center,
               children: <Widget>[
@@ -116,7 +116,7 @@ class _IteratorExampleState extends State<IteratorExample> {
                 ),
               ],
             ),
-            const SizedBox(height: LayoutConstants.spaceL),
+            const SizedBox(height: Dimens.spaceL),
             Box(
               nodeId: 1,
               color: _getBackgroundColor(1),

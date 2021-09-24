@@ -18,7 +18,7 @@ class CommandHistoryColumn extends StatelessWidget {
           'Command history:',
           style: Theme.of(context).textTheme.headline6,
         ),
-        const SizedBox(height: LayoutConstants.spaceS),
+        const SizedBox(height: Dimens.spaceS),
         if (commandList.isEmpty) const Text('Command history is empty.'),
         for (var i = 0; i < commandList.length; i++)
           Text('${i + 1}. ${commandList[i]}'),

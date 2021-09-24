@@ -185,7 +185,7 @@ class _StrategyExampleState extends State<StrategyExample> {
     return ScrollConfiguration(
       behavior: ScrollBehavior(),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: LayoutConstants.paddingL),
+        padding: const EdgeInsets.symmetric(horizontal: Dimens.paddingL),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -193,7 +193,7 @@ class _StrategyExampleState extends State<StrategyExample> {
               onAdd: _addToOrder,
               onClear: _clearOrder,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             Stack(
               children: <Widget>[
                 AnimatedOpacity(
@@ -217,7 +217,7 @@ class _StrategyExampleState extends State<StrategyExample> {
                       OrderItemsTable(
                         orderItems: _order.items,
                       ),
-                      const SizedBox(height: LayoutConstants.spaceM),
+                      const SizedBox(height: Dimens.spaceM),
                       ShippingOptions(
                         selectedIndex: _selectedStrategyIndex,
                         shippingOptions: _shippingCostsStrategyList,
@@ -261,7 +261,7 @@ class ShippingOptions extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(LayoutConstants.paddingM),
+        padding: const EdgeInsets.all(Dimens.paddingM),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -307,7 +307,7 @@ class OrderSummary extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: Padding(
-        padding: const EdgeInsets.all(LayoutConstants.paddingM),
+        padding: const EdgeInsets.all(Dimens.paddingM),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
@@ -321,7 +321,7 @@ class OrderSummary extends StatelessWidget {
               label: 'Subtotal',
               value: order.price,
             ),
-            const SizedBox(height: LayoutConstants.spaceM),
+            const SizedBox(height: Dimens.spaceM),
             OrderSummaryRow(
               fontFamily: 'Roboto',
               label: 'Shipping',

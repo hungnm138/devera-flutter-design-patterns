@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../constants/constants.dart';
 import '../../data/repositories/design_pattern_categories_repository.dart';
-import '../../modules/design_pattern_details/layouts/layouts.dart';
+import '../../widgets/modules/design_pattern_details/layouts/layouts.dart';
 import '../../constants/themes.dart';
 
 class DesignPatternDetailsPage extends ConsumerWidget {
